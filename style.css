@@ -3,15 +3,26 @@ html {
 }
 
 body {
-    background-color: #111827;
+    background-color: #0f172a;
 }
 
 .b-example-divider {
     width: 100%;
-    height: 3rem;
-    background-color: rgba(255, 255, 255, .05);
-    border: solid rgba(255, 255, 255, .08);
-    border-width: 1px 0;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(13,110,253,.4),
+        transparent
+    );
+    border: none;
+}
+
+
+.profile-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .navbar-brand {
@@ -20,6 +31,16 @@ body {
 
 .card {
     transition: 0.2s ease-in-out;
+    background: #1e293b;
+    border: 1px solid #334155;
+}
+
+.card-title {
+    color: #f8fafc;
+}
+
+.card-text {
+    color: #cbd5e1;
 }
 
 .card:hover {
@@ -42,12 +63,6 @@ section {
     scroll-margin-top: 80px;
 }
 
-.profile-photo {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-
 #projekty .card {
     transition: all 0.25s ease;
     border-radius: 18px;
@@ -65,16 +80,19 @@ section {
 
 .hero-section {
     background:
-        radial-gradient(circle at top left, rgba(13, 110, 253, 0.25), transparent 35%),
+        radial-gradient(circle at top left,
+        rgba(13, 110, 253, 0.25),
+        transparent 35%),
         #111827;
 }
 
 .hero-card {
     padding: 2.5rem;
     border-radius: 24px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: #1e293b;
+    border: 1px solid #334155;
     box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+    backdrop-filter: blur(10px);
 }
 
 .hero-tags {
@@ -86,17 +104,18 @@ section {
 .hero-tags span {
     padding: 8px 14px;
     border-radius: 999px;
-    background: rgba(13, 110, 253, 0.18);
-    color: #9ec5fe;
     font-weight: 600;
+    background: rgba(13,110,253,.15);
+    color: #60a5fa;
+    border: 1px solid rgba(13,110,253,.25);
 }
 
 .info-box {
     height: 100%;
     padding: 2rem;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #1e293b;
+    border: 1px solid #334155;
 }
 
 .contact-card {
@@ -107,14 +126,15 @@ section {
     text-decoration: none;
     color: inherit;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
     transition: 0.25s ease;
+    background: #1e293b;
+    border: 1px solid #334155;
 }
 
 .contact-card:hover {
     transform: translateY(-8px);
     border-color: #0d6efd;
+    box-shadow: 0 10px 30px rgba(13,110,253,.15);
 }
 
 .contact-icon {
